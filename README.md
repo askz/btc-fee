@@ -1,4 +1,4 @@
-btc-fee
+btc-fee [![npm version](https://badge.fury.io/js/btc-fee.svg)](https://badge.fury.io/js/btc-fee)
 ===
 ## Installation
 
