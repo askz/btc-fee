@@ -1,8 +1,8 @@
 {
   "name": "btc-fee",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Get recommended & custom bitcoin fees",
-  "main": "lib/btcfee.js",
+  "main": "lib/index.js",
   "files": [
     "README.md",
     "package.json",
