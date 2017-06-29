@@ -1,4 +1,4 @@
-btc-fee [![npm version](https://badge.fury.io/js/btc-fee.svg)](https://badge.fury.io/js/btc-fee)
+btc-fee [![npm version](https://badge.fury.io/js/btc-fee.svg)](https://badge.fury.io/js/btc-fee) [![CircleCI](https://circleci.com/gh/genichiro/btc-fee/tree/master.svg?style=svg)](https://circleci.com/gh/genichiro/btc-fee/tree/master)
 ===
 ## Installation
 
