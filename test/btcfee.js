@@ -43,9 +43,9 @@ test('.estimated', async t => {
 
   const first = await btcfee.estimated(10500);
   t.is(first, 0);
-  const second = await btcfee.estimated(1500);
+  const second = await btcfee.estimated(150);
   t.is(second, 1);
-  const third = await btcfee.estimated(500);
+  const third = await btcfee.estimated(1);
   t.is(third, 31);
 });
 

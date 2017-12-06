@@ -8,7 +8,7 @@ export default {
   estimated(latencyMinutes) {
     return earncom.list().then(fees => {
       const result = fees.find(fee => {
-        return fee.maxMinutes <= latencyMinutes;
+        return fee.minMinutes < latencyMinutes;
       });
       return result ? result.minFee : fees[fees.length - 1].minFee;
     });
