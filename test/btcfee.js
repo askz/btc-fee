@@ -3,7 +3,7 @@ import sinon from 'sinon';
 import btcfee from 'btcfee';
 
 // for stub
-import from21co from '21co';
+import earncom from 'earncom';
 
 const RESPONSE = Object.freeze([{
   minFee: 0,
@@ -35,7 +35,7 @@ const RESPONSE = Object.freeze([{
 }]);
 
 test.before('sinon', t => {
-  sinon.stub(from21co, 'list').returns(Promise.resolve(RESPONSE));
+  sinon.stub(earncom, 'list').returns(Promise.resolve(RESPONSE));
 });
 
 test('.estimated', async t => {
@@ -50,5 +50,5 @@ test('.estimated', async t => {
 });
 
 test.after('cleanup', t => {
-  from21co.list.restore();
+  earncom.list.restore();
 });

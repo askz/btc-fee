@@ -1,12 +1,12 @@
-import from21co from './21co';
+import earncom from './earncom';
 
 export default {
   recommended() {
-    return from21co.recommended();
+    return earncom.recommended();
   },
 
   estimated(latencyMinutes) {
-    return from21co.list().then(fees => {
+    return earncom.list().then(fees => {
       const result = fees.find(fee => {
         return fee.maxMinutes <= latencyMinutes;
       });

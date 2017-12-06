@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const HOST = 'https://bitcoinfees.21.co/api/v1';
+const HOST = 'https://bitcoinfees.earn.com/api/v1';
 
 export default {
   recommended() {

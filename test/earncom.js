@@ -1,9 +1,9 @@
 import test from 'ava';
 import axios from 'axios';
 import MockAdapter from 'axios-mock-adapter';
-import from21co from '21co';
+import earncom from 'earncom';
 
-const HOST = 'https://bitcoinfees.21.co/api/v1';
+const HOST = 'https://bitcoinfees.earn.com/api/v1';
 const mock = new MockAdapter(axios);
 
 test('.recommended', async t => {
@@ -16,7 +16,7 @@ test('.recommended', async t => {
   });
   mock.onGet(`${HOST}/fees/recommended`).reply(200, RECOMMENDED);
 
-  const fees = await from21co.recommended();
+  const fees = await earncom.recommended();
   t.deepEqual(fees, {
     fast: RECOMMENDED.fastestFee,
     medium: RECOMMENDED.halfHourFee,
@@ -41,7 +41,7 @@ test('.list', async t => {
     fees: LIST
   });
 
-  const fees = await from21co.list();
+  const fees = await earncom.list();
   t.deepEqual(fees, LIST);
 });
 
